@@ -8,11 +8,12 @@ import (
 )
 
 const (
-	gravelerPartition = "graveler"
-	reposPrefix       = "repos"
-	tagsPrefix        = "tags"
-	branchesPrefix    = "branches"
-	commitsPrefix     = "commits"
+	gravelerPartition      = "graveler"
+	cleanupTokensPartition = "cleanup-tokens"
+	reposPrefix            = "repos"
+	tagsPrefix             = "tags"
+	branchesPrefix         = "branches"
+	commitsPrefix          = "commits"
 )
 
 func RepoPath(repoID RepositoryID) string {
@@ -33,6 +34,10 @@ func RepoPartition(repo *RepositoryRecord) string {
 
 func StagingTokenPartition(token StagingToken) string {
 	return token.String()
+}
+
+func CleanupTokensPartition() string {
+	return cleanupTokensPartition
 }
 
 func TagPath(tagID TagID) string {
