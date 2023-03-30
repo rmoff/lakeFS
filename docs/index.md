@@ -1,6 +1,6 @@
 ---
 layout: default
-title: BAR What is lakeFS212
+title: What is lakeFS 1
 description: The lakeFS documentation provides guidance on how to use lakeFS to deliver resilience and manageability to data lakes.
 nav_order: 0
 redirect_from: ./downloads.html
